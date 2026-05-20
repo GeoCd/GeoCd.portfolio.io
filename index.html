@@ -37,9 +37,9 @@
     <p class="section-label">about</p>
     <div class="about-layout">
       <div class="about-text">
-        <p>Mechatronics Engineering graduate from IPN UPIITA, with an international exchange at Universidad Politécnica de Madrid. Based in Nezahualcóyotl, CDMX.</p>
-        <p>I tend to work from the edges of a problem, connecting hardware constraints with software logic until something actually makes sense end-to-end. I've built IoT pipelines, trained ML models, and shipped embedded systems, mostly out of genuine curiosity.</p>
-        <p>Currently looking for a first industry role in software development, data science, IoT systems or integration engineering.</p>
+        <p>I studied Mechatronics because it's the engineering degree that covers everything without going deep into any single area. That breadth is the point: you end up understanding the surrounding disciplines of whatever you're specializing in, which makes you harder to box in and faster to pick up new technologies.
+        In practice that means I need the full picture before I touch anything. Not out of perfectionism, but because missing context is usually where things break. I've found that the most useful thing I can do on any project is understand what the adjacent systems are doing, even when they're not technically my problem.</p>
+        <p>Based in Nezahualcóyotl, CDMX. Graduate of IPN UPIITA, exchange at Universidad Politécnica de Madrid.</p>
       </div>
     </div>
   </section>
@@ -52,6 +52,7 @@
   <section id="projects">
     <p class="section-label">projects</p>
 
+    <!-- Pocket Sage -->
     <div class="project-card">
       <div class="project-body">
         <div class="project-text">
@@ -62,12 +63,14 @@
           <p class="project-desc">Fully offline AI companion running on a resource-constrained Orange Pi Zero 2W. Speech-to-text via Whisper.cpp, LLM inference via llama.cpp, TTS via Piper. No cloud dependency by design. Full pipeline validated end-to-end on mock hardware with persistent state across power cycles.</p>
           <div class="project-tags">
             <span class="tag">Python</span>
-            <span class="tag">llama.cpp</span>
-            <span class="tag">whisper.cpp</span>
-            <span class="tag">piper TTS</span>
+            <span class="tag">Llama.cpp</span>
+            <span class="tag">Whisper.cpp</span>
+            <span class="tag">Piper TTS</span>
             <span class="tag">SQLite</span>
-            <span class="tag">Radxa</span>
+            <span class="tag">Radxa SBCs</span>
             <span class="tag">Linux/WSL</span>
+            <span class="tag">Custom Electronics</span>
+            <span class="tag">Mechanical Design</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/GeoCd" target="_blank">
@@ -79,11 +82,12 @@
           </div>
         </div>
         <div class="project-photo">
-          <div class="project-photo-placeholder">photo<br>110×80</div>
+          <img src="/assets/RadxaCubieA7S.jpg" alt="CubieA7S">
         </div>
       </div>
     </div>
 
+    <!-- MMMX Analysis -->
     <div class="project-card">
       <div class="project-body">
         <div class="project-text">
@@ -93,27 +97,37 @@
           </div>
           <p class="project-desc">EDA and predictive modeling on 98,000 hourly weather readings from Mexico City's main airport station (2017–2025). Trained and compared Linear Regression, Random Forest, ARIMA and LSTM. LSTM achieved RMSE of 1.67°F, a 44% improvement over ARIMA. Shipped as a modular Python pipeline with Power BI dashboard.</p>
           <div class="project-tags">
-            <span class="tag">python</span>
+            <span class="tag">Python</span>
+            <span class="tag">Docker</span>
             <span class="tag">pandas</span>
             <span class="tag">scikit-learn</span>
             <span class="tag">TensorFlow/Keras</span>
             <span class="tag">statsmodels</span>
             <span class="tag">Power BI</span>
-            <span class="tag">selenium</span>
+            <span class="tag">Selenium</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/GeoCd" target="_blank">
-              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <a href="https://github.com/GeoCd/MMMX-station-weather-analysis" target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
               repo
+            </a>
+            <a href="https://www.kaggle.com/datasets/jorgeaconde/historical-weather-in-mexico" target="_blank">
+              <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M 18.769 23.508 L 11.934 15.014 L 18.487 8.672 C 18.609 8.545 18.567 8.18 18.239 8.18 L 14.995 8.18 C 14.831 8.18 14.667 8.264 14.503 8.428 L 8.302 14.695 L 8.302 0.352 C 8.302 0.117 8.184 0 7.95 0 L 5.517 0 C 5.283 0 5.166 0.117 5.166 0.352 L 5.166 23.648 C 5.166 23.883 5.283 24 5.517 24 L 7.95 24 C 8.184 24 8.302 23.883 8.302 23.648 L 8.302 18.539 L 9.745 17.166 L 14.925 23.756 C 15.066 23.92 15.23 24.005 15.417 24.005 L 18.553 24.005 C 18.717 24.005 18.811 23.958 18.834 23.864 L 18.769 23.508 z"/>
+              </svg>
+              dataset
             </a>
           </div>
         </div>
         <div class="project-photo">
-          <div class="project-photo-placeholder">photo<br>110×80</div>
+          <img src="/assets/MMMX_Analysis.jpg" alt="MMMX_Analysis">
         </div>
       </div>
     </div>
 
+    <!-- Open Weather Platform -->
     <div class="project-card">
       <div class="project-body">
         <div class="project-text">
@@ -123,7 +137,18 @@
           </div>
           <p class="project-desc">Distributed IoT weather data platform integrating an ESP32 sensor network (I2C) with a Raspberry Pi MQTT pipeline. Hardware schematics, firmware and assembly docs are publicly available as a community resource. Sensor station fully operational; server-side pipeline under active development.</p>
           <div class="project-tags">
-            <span class="tag">ESP32</span><span class="tag">Raspberry Pi</span><span class="tag">MQTT</span><span class="tag">C/C++</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">I2C</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">I2C</span>
+            <span class="tag">UART</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">C/C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript/HTML/CSS</span>
+            <span class="tag">Custom Electronics</span>
+            <span class="tag">Mechanical Design</span>
           </div>
           <div class="project-links">
             <a href="https://github.com/GeoCd" target="_blank">
@@ -131,85 +156,119 @@
               repo
             </a>
             <a class="unavailable">
-              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              live (coming soon)
+              <svg viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              (Currently working on it)
             </a>
           </div>
         </div>
         <div class="project-photo">
-          <div class="project-photo-placeholder">photo<br>110×80</div>
+          <img src="/assets/WIP_OpenWeather.png" alt="OpenWeatherPlatform">
         </div>
       </div>
     </div>
 
+    <!-- Theo -->
     <div class="project-card">
       <div class="project-body">
         <div class="project-text">
           <div class="project-header">
-            <span class="project-name">Barbot — IoT Beverage System</span>
-            <span class="project-year">2023 — 2025</span>
-          </div>
-          <p class="project-desc">Full-stack thesis project: custom electronics, Arduino Mega talking to a Raspberry Pi via UART, Python Flask backend, web frontend for ordering and a real-time monitoring dashboard. Remote access via Cloudflare Tunnel. Minimum 5% dosing error across 40 test cycles with full fault traceability through server logs.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span class="tag">UART</span><span class="tag">SQLite</span><span class="tag">Cloudflare Tunnel</span><span class="tag">JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/GeoCd" target="_blank">
-              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              repo
-            </a>
-          </div>
-        </div>
-        <div class="project-photo">
-          <div class="project-photo-placeholder">photo<br>110×80</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-body">
-        <div class="project-text">
-          <div class="project-header">
-            <span class="project-name">Theophrastus — Weather AI Agent</span>
+            <span class="project-name">Theophrastus - Weather AI Agent</span>
             <span class="project-year">2025</span>
           </div>
           <p class="project-desc">Multi-agent AI system built with Google ADK. Four specialized sub-agents handle data collection, geocoding, risk evaluation and report generation. Delivers structured environmental risk reports with actionable recommendations. Submitted as Google AI Agents Capstone.</p>
           <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">Google ADK</span><span class="tag">Multi-agent</span><span class="tag">APIs</span><span class="tag">JSON</span><span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">Google ADK</span>
+            <span class="tag">Multi-agent</span>
+            <span class="tag">APIs</span>
+            <span class="tag">JSON</span>
+            <span class="tag">SQL</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/GeoCd" target="_blank">
-              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <a href="https://github.com/GeoCd/WeatherAdvisorAgent" target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
               repo
+            </a>
+            <a href="https://kaggle.com/competitions/agents-intensive-capstone-project/writeups/new-writeup-1763321069175" target="_blank">
+              <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M 18.769 23.508 L 11.934 15.014 L 18.487 8.672 C 18.609 8.545 18.567 8.18 18.239 8.18 L 14.995 8.18 C 14.831 8.18 14.667 8.264 14.503 8.428 L 8.302 14.695 L 8.302 0.352 C 8.302 0.117 8.184 0 7.95 0 L 5.517 0 C 5.283 0 5.166 0.117 5.166 0.352 L 5.166 23.648 C 5.166 23.883 5.283 24 5.517 24 L 7.95 24 C 8.184 24 8.302 23.883 8.302 23.648 L 8.302 18.539 L 9.745 17.166 L 14.925 23.756 C 15.066 23.92 15.23 24.005 15.417 24.005 L 18.553 24.005 C 18.717 24.005 18.811 23.958 18.834 23.864 L 18.769 23.508 z"/>
+              </svg>
+              writeup
             </a>
           </div>
         </div>
         <div class="project-photo">
-          <div class="project-photo-placeholder">photo<br>110×80</div>
+          <img src="/assets/Theo_Thumbnail.png" alt="Theo">
         </div>
       </div>
     </div>
 
+    <!-- Barbot -->
     <div class="project-card">
       <div class="project-body">
         <div class="project-text">
           <div class="project-header">
-            <span class="project-name">CrowdCluster — Density Analysis</span>
-            <span class="project-year">2023 — present</span>
+            <span class="project-name">Sistema semiautomático de preparación de bebidas con la combinación de tres ingredientes utilizando tecnologías IoT</span>
+            <span class="project-year">2023 — 2025</span>
+          </div>
+          <p class="project-desc">Full-stack thesis project: custom electronics, Arduino Mega talking to a Raspberry Pi via UART, Python Flask backend, web frontend for ordering and a real-time monitoring dashboard. Remote access via Cloudflare Tunnel. Minimum 5% dosing error across 40 test cycles with full fault traceability through server logs.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">UART</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Cloudflare Tunnel</span>
+            <span class="tag">JavaScript/HTML/CSS</span>
+          </div>
+        </div>
+        <div class="project-photo">
+          <img src="/assets/Barbot.jpg" alt="Barbot">
+        </div>
+      </div>
+    </div>
+
+    <!-- Crowd Cluster Locator -->
+    <div class="project-card">
+      <div class="project-body">
+        <div class="project-text">
+          <div class="project-header">
+            <span class="project-name">CrowdCluster - Density Analysis</span>
+            <span class="project-year">2023 — 2024</span>
           </div>
           <p class="project-desc">Person localization and crowd density analysis. Original version used a custom Haar Cascade classifier and a Winner-Takes-All clustering network in MATLAB. Rebuilt with YOLOv8s for real-time detection, zone-based counting and Gaussian heatmap visualization.</p>
           <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span><span class="tag">NumPy</span><span class="tag">MATLAB</span>
+            <span class="tag">Python</span>
+            <span class="tag">YOLOv8</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">Haar Cascade</span>
+            <span class="tag">Clustering</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/GeoCd" target="_blank">
-              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              repo
+            <a href="https://github.com/GeoCd/crowd-cluster-locator-YOLOv8" target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              repo YOLOv8
+            </a>
+            <a href="https://github.com/GeoCd/crowd-cluster-locator" target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              original repo
             </a>
           </div>
         </div>
         <div class="project-photo">
-          <div class="project-photo-placeholder">photo<br>110×80</div>
+          <img src="/assets/ClusterLocator.png" alt="Cluester Locator">
         </div>
       </div>
     </div>
@@ -230,18 +289,18 @@
       </div>
       <div class="skill-group">
         <p class="skill-group-label">hardware / iot</p>
-        <p class="skill-list">ESP32 · Arduino<br>Raspberry Pi · Orange Pi<br>MQTT · I2C · UART<br>PIC microcontrollers</p>
+        <p class="skill-list">ESP32 · Arduino<br>Raspberry SBCs<br>Radxa SBCs<br>MQTT · I2C · UART · SPI<br>PIC microcontrollers</p>
       </div>
       <div class="skill-group">
         <p class="skill-group-label">tools / infra</p>
-        <p class="skill-list">Git · Docker · Linux<br>Flask · FastAPI<br>Cloudflare Tunnel<br>GitHub Actions</p>
+        <p class="skill-list">Git · Docker<br>Flask · Linux<br>Cloudflare Tunnel<br>GitHub Actions</p>
       </div>
       <div class="skill-group">
         <p class="skill-group-label">ai / agents</p>
         <p class="skill-list">Google ADK · MCP<br>llama.cpp · Whisper.cpp<br>Piper TTS · HuggingFace<br>n8n · Zapier</p>
       </div>
       <div class="skill-group">
-        <p class="skill-group-label">cloud / certs</p>
+        <p class="skill-group-label">cloud / certifications</p>
         <p class="skill-list">Azure (AZ-900, AI-900)<br>Oracle OCI · Postman API<br>Google AI Agents<br>ISO 27001</p>
       </div>
     </div>
@@ -251,16 +310,22 @@
   <section id="contact">
     <p class="section-label">contact</p>
     <div class="contact-block">
-      <div class="contact-row"><span class="contact-key">email</span><a href="mailto:jorge.a.conde.j@gmail.com">jorge.a.conde.j@gmail.com</a></div>
-      <div class="contact-row"><span class="contact-key">github</span><a href="https://github.com/GeoCd" target="_blank">github.com/GeoCd</a></div>
-      <div class="contact-row"><span class="contact-key">linkedin</span><a href="https://linkedin.com/in/jorge-andrés-conde-jaimes-ba1b4a1b9" target="_blank">linkedin.com/in/jorge-andrés-conde-jaimes</a></div>
-      <div class="contact-row"><span class="contact-key">location</span><span>Nezahualcóyotl, CDMX · México</span></div>
+      <div class="contact-row">
+        <span class="contact-key">email</span>
+        <a href="mailto:jorge.a.conde.j@gmail.com">jorge.a.conde.j@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">github</span>
+        <a href="https://github.com/GeoCd" target="_blank">github.com/GeoCd</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-key">linkedin</span>
+        <a href="https://linkedin.com/in/jorge-andrés-conde-jaimes-ba1b4a1b9" target="_blank">linkedin.com/in/jorge-andrés-conde-jaimes</a>
+      </div>
     </div>
   </section>
 
 </main>
-
-<footer>built by hand · jorge conde · 2026</footer>
 
 <script src="main.js"></script>
 </body>

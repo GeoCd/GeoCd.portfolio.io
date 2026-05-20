@@ -46,7 +46,7 @@ section { margin-bottom: 4.5rem; }
   background: var(--border);
 }
 
-/* presentation */
+/* PRESENTATION STYLES */
 .presentation { padding: 2rem 0 1rem; }
 
 .presentation-layout {
@@ -71,20 +71,6 @@ section { margin-bottom: 4.5rem; }
   inset: -4px;
   border: 1px solid var(--border);
   pointer-events: none;
-}
-
-.photo-placeholder {
-  width: 100%;
-  height: 100%;
-  background: var(--surface2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--mono);
-  font-size: 0.6rem;
-  color: var(--muted);
-  text-align: center;
-  line-height: 1.5;
 }
 
 .photo-frame img {
@@ -156,8 +142,8 @@ h1 {
 
 .project-photo {
   flex-shrink: 0;
-  width: 110px;
-  height: 80px;
+  width: 250px;
+  height: 233px;
   border: 1px solid var(--border2);
   padding: 4px;
   background: var(--surface2);
@@ -179,20 +165,6 @@ h1 {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.project-photo-placeholder {
-  width: 100%;
-  height: 100%;
-  background: var(--surface2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--mono);
-  font-size: 0.55rem;
-  color: var(--border2);
-  text-align: center;
-  line-height: 1.5;
 }
 
 .project-header {
@@ -319,8 +291,6 @@ h1 {
   pointer-events: none;
 }
 
-.about-photo .photo-placeholder { font-size: 0.58rem; }
-
 .about-text { font-size: 0.86rem; color: var(--muted); line-height: 1.8; }
 .about-text p { margin-bottom: 0.7rem; }
 .about-text p:last-child { margin-bottom: 0; }
@@ -347,13 +317,3 @@ h1 {
 }
 
 .contact-block a:hover { color: var(--orange); border-color: var(--orange-dim); }
-
-/* FOOTER */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 1.5rem 2rem;
-  text-align: center;
-  font-family: var(--mono);
-  font-size: 0.62rem;
-  color: var(--border2);
-}
