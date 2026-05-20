@@ -310,26 +310,3 @@ ul {
   color: var(--muted);
   line-height: 1.9;
 }
-
-/* CONTACT */
-.contact-block {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--muted);
-  line-height: 2.4;
-}
-
-.contact-row { display: flex; gap: 1rem; }
-
-.contact-key {
-  color: var(--border2);
-  min-width: 80px;
-}
-
-.contact-block a {
-  color: var(--cold-white);
-  text-decoration: none;
-  border-bottom: 1px solid var(--border2);
-}
-
-.contact-block a:hover { color: var(--orange); border-color: var(--orange-dim); }
