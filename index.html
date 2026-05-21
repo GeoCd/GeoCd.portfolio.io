@@ -68,7 +68,7 @@
       </div>
       <div class="skill-group">
         <p class="skill-group-label">ml / data</p>
-        <p class="skill-list">scikit-learn · TensorFlow<br>pandas · numpy<br>statsmodels · Power BI<br>OpenCV · YOLOv8</p>
+        <p class="skill-list">scikit-learn · TensorFlow<br>pandas · numpy · Kaggle<br>statsmodels · Power BI<br>OpenCV · YOLOv8</p>
       </div>
       <div class="skill-group">
         <p class="skill-group-label">hardware / iot</p>
@@ -76,7 +76,7 @@
       </div>
       <div class="skill-group">
         <p class="skill-group-label">tools / infra</p>
-        <p class="skill-list">Git · Docker<br>Flask · Linux<br>Cloudflare Tunnel<br>GitHub Actions</p>
+        <p class="skill-list">Git · Docker<br>Flask · Linux<br>Cloudflare Tunnel<br>GitHub Actions · Selenium<br>Ansible</p>
       </div>
       <div class="skill-group">
         <p class="skill-group-label">ai / agents</p>
@@ -133,13 +133,15 @@
       <div class="project-body">
         <div class="project-text">
           <div class="project-header">
-            <span class="project-name">MMMX Automated Weather Data Pipeline</span>
-            <span class="project-year">2026</span>
+            <span class="project-name">Automated Weather Data Pipeline & Data Analysis</span>
+            <span class="project-year">2025 - 2026</span>
           </div>
-          <p class="project-desc">EDA and predictive modeling on 98,000 hourly weather readings from Mexico City's main airport station (2017–2025). Trained and compared Linear Regression, Random Forest, ARIMA and LSTM. LSTM achieved RMSE of 1.67°F, a 44% improvement over ARIMA. Shipped as a modular Python pipeline with Power BI dashboard.</p>
+          <p class="project-desc">Production MLOps pipeline collecting daily weather observations from registered stations across Mexico via automated scraping, cleaning and hourly resampling. LSTM model retrained daily with updated data, achieving RMSE of 1.67°F on MMMX station. Dataset updated automatically on Kaggle via GitHub Actions CI/CD.</p>
           <div class="project-tags">
             <span class="tag">Python</span>
-            <span class="tag">Docker</span>
+            <span class="tag">Github Actions</span>
+            <span class="tag">Kaggle</span>
+            <span class="tag">CI/CD</span>
             <span class="tag">pandas</span>
             <span class="tag">scikit-learn</span>
             <span class="tag">TensorFlow/Keras</span>
@@ -148,17 +150,29 @@
             <span class="tag">Selenium</span>
           </div>
           <div class="project-links">
+            <a href="https://github.com/GeoCd/automated-weather-data-pipeline" target="_blank">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              automated repo
+            </a>
             <a href="https://github.com/GeoCd/MMMX-station-weather-analysis" target="_blank">
               <svg viewBox="0 0 24 24">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
               </svg>
-              repo
+              analysis repo
+            </a>
+            <a href="https://www.kaggle.com/datasets/jorgeaconde/historical-weather-mexico-stations" target="_blank">
+              <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M 18.769 23.508 L 11.934 15.014 L 18.487 8.672 C 18.609 8.545 18.567 8.18 18.239 8.18 L 14.995 8.18 C 14.831 8.18 14.667 8.264 14.503 8.428 L 8.302 14.695 L 8.302 0.352 C 8.302 0.117 8.184 0 7.95 0 L 5.517 0 C 5.283 0 5.166 0.117 5.166 0.352 L 5.166 23.648 C 5.166 23.883 5.283 24 5.517 24 L 7.95 24 C 8.184 24 8.302 23.883 8.302 23.648 L 8.302 18.539 L 9.745 17.166 L 14.925 23.756 C 15.066 23.92 15.23 24.005 15.417 24.005 L 18.553 24.005 C 18.717 24.005 18.811 23.958 18.834 23.864 L 18.769 23.508 z"/>
+              </svg>
+              updated dataset
             </a>
             <a href="https://www.kaggle.com/datasets/jorgeaconde/historical-weather-in-mexico" target="_blank">
               <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24">
                 <path d="M 18.769 23.508 L 11.934 15.014 L 18.487 8.672 C 18.609 8.545 18.567 8.18 18.239 8.18 L 14.995 8.18 C 14.831 8.18 14.667 8.264 14.503 8.428 L 8.302 14.695 L 8.302 0.352 C 8.302 0.117 8.184 0 7.95 0 L 5.517 0 C 5.283 0 5.166 0.117 5.166 0.352 L 5.166 23.648 C 5.166 23.883 5.283 24 5.517 24 L 7.95 24 C 8.184 24 8.302 23.883 8.302 23.648 L 8.302 18.539 L 9.745 17.166 L 14.925 23.756 C 15.066 23.92 15.23 24.005 15.417 24.005 L 18.553 24.005 C 18.717 24.005 18.811 23.958 18.834 23.864 L 18.769 23.508 z"/>
               </svg>
-              dataset
+              original dataset
             </a>
           </div>
         </div>
@@ -174,7 +188,7 @@
         <div class="project-text">
           <div class="project-header">
             <span class="project-name">Open Weather Data Platform</span>
-            <span class="project-year">2025 — present</span>
+            <span class="project-year">2025 - present</span>
           </div>
           <p class="project-desc">Distributed IoT weather data platform integrating an ESP32 sensor network (I2C) with a Raspberry Pi MQTT pipeline. Hardware schematics, firmware and assembly docs are publicly available as a community resource. Sensor station fully operational; server-side pipeline under active development.</p>
           <div class="project-tags">
@@ -256,7 +270,7 @@
         <div class="project-text">
           <div class="project-header">
             <span class="project-name">Sistema semiautomático de preparación de bebidas con la combinación de tres ingredientes utilizando tecnologías IoT</span>
-            <span class="project-year">2023 — 2025</span>
+            <span class="project-year">2023 - 2025</span>
           </div>
           <p class="project-desc">Full-stack thesis project: custom electronics, Arduino Mega talking to a Raspberry Pi via UART, Python Flask backend, web frontend for ordering and a real-time monitoring dashboard. Remote access via Cloudflare Tunnel. Minimum 5% dosing error across 40 test cycles with full fault traceability through server logs.</p>
           <div class="project-tags">
